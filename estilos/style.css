@@ -29,6 +29,16 @@ body {
     padding: 30px;
 }
 
+#horario {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.foto {
+    border-radius: 50%;
+}
+
 #rodape {
     text-align: center;
     color: white;
