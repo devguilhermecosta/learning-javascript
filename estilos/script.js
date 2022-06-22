@@ -1,5 +1,4 @@
 var hora = new Date().getHours()
-var hora = 
 horario.innerHTML = `Agora são ${hora} horas`
 var img = window.document.getElementById('foto')
 
@@ -13,7 +12,7 @@ if (hora >= 0 && hora < 6) {
     document.body.style.background = '#EDC259'
 } else if (hora < 18) {
     img.src = 'imagens/tarde.jpeg'
-    img.alt =  'foto da tarde'
+    img.alt = 'foto da tarde'
     document.body.style.background = '#4DAD80'
 } else {
     img.src = 'imagens/noite.jpeg'
