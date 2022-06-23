@@ -1,18 +1,17 @@
 function verificar() {
-    var data = new Date().getFullYear()
-    var data_nascimento = document.getElementById('input_idade')
-    var resultado = document.querySelector('div#resultado')
-    var idade = data - Number(data_nascimento.value)
-
-    if (data_nascimento.value.length == 0 || Number(data_nascimento.value) > data) {
-        window.alert('Verifique os dados digitados.')
+    var data_nascimento = document.querySelector('input#input_idade')
+    var data_atual = new Date().getFullYear()
+    var idade = data_atual - Number(data_nascimento.value)
+    
+    if (data_nascimento.value.length == 0 || data_nascimento.value > data_atual) {
+        window.alert('Verifique os dados informados.')
     } else if (idade > 130) {
-        window.alert('Idade improvável. Tente novamente.')
+        window.alert(`A idade de ${idade} anos é improvável. Tente novamente.`)
     } else {
-        var sexo = document.getElementsByName('radsex')
+        var resultado = document.querySelector('div#resultado')
         var genero = ''
+        var sexo = document.getElementsByName('radsex')
         var foto = document.createElement('img')
-        foto.setAttribute('id', 'foto')
         foto.style.paddingTop = '20px'
 
         if (sexo[0].checked) {
@@ -42,4 +41,4 @@ function verificar() {
         resultado.appendChild(foto)
         resultado.style.textAlign = 'center'
     }
-}   
+}
