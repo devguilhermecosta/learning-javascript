@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <section class="content text-content">
+        <div>
+            <p class="space-content">
+                Data de Nascimento: 
+                <input type="number" name="input_idade" id="input_idade" class="input">
+            </p>
+            <p class="space-content">
+                Sexo: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p class="space-content">
+                <input type="button" value="Verificar" onclick="verificar()" class="button">
+            </p>
+            
+        </div>
+        <div id="resultado" class="space-content"></div>
+    </section>
+    <script src="assets/script.js"></script>
+</body>
+</html>
