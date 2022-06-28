@@ -10,6 +10,7 @@ function count() {
 
     if (initial.value.length == 0 || end.value.length == 0 || pass.value.length == 0) {
         window.alert('[ERROR] Dados faltando.')
+        res.innerHTML = 'ERROR'
     } else {
         var i = Number(initial.value)
         var e = Number(end.value)
