@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*, ** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --principal-font: 'Roboto', sans-serif;
+    --alternat-font: 'Times New Roman', cursive, sans-serif;
+    --bg-color: #7ABAEB;
+    --complementar-color: #9E5019;
+    --alternative-color: #EBBE7A;
+}
+
+ header > h1 {
+    text-align: center;
+    color: var(--complementar-color);
+    font-family: var(--principal-font);
+    text-transform: uppercase;
+}
+
+.center-content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.bg-colored {
+    background-color: var(--bg-color);
+}
+
+.bg-non-colored {
+    background-color: white;
+}
+
+.section-content {
+    padding: 20px;
+    border-radius: 15px;
+    font-family: var(--principal-font);
+    text-transform: uppercase;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.text-footer {
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    font-family: var(--principal-font);
+}
+
+.input {
+    width: 100%;
+}
