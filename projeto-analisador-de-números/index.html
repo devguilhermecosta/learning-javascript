@@ -17,13 +17,13 @@
     <main id="main" class="conteudo center-content">
         <p>
             <label for="iptnumero">Número (entre 1 e 100):</label>
-            <input type="number" name="iptnumero" id="iptnumero" class="input-number">
-            <input type="button" value="Adicionar" class="button">
+            <input type="number" name="iptnumero" id="iptnumero" placeholder="Digite o número" class="input-number">
         </p>
         <p>
-            <select name="valores" id="valores" size="5" >
-                <option value="">Lista dos valores</option>
-            </select>
+            <input type="button" value="Adicionar" class="button" onclick="adicionar()">
+        </p>
+        <p>
+            <select name="valores" id="valores" size="5" ></select>
         </p>
         <p>
             <input type="button" value="Finalizar" class="button">
@@ -34,5 +34,8 @@
     <footer id="footer" class="center-content ">
         <h1 class="font-external">&copy;CurosemVideo</h1>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

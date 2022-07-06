@@ -16,6 +16,8 @@
     'conteudo'
     'rodape';
     row-gap: 30px;
+    align-items: center;
+    justify-items: center;
     background-color: rgba(0, 119, 255, 0.664);
     font-family: 'Times New Roman', Times, serif;
 }
@@ -27,22 +29,15 @@
 #main {
     grid-area: conteudo;
     border: 1px solid black;
-    width: 600px;
-    max-width: 600px;
-    margin: 0 auto;
     padding: 25px;
     display: flex;
     gap: 10px;
     flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: flex-start;
     font-size: 25px;
     border-radius: 15px;
     background-color: white;
-}
-
-.flex-item {
-    flex-shrink: 1;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #footer {
@@ -63,9 +58,14 @@
 .input-number {
     width: 150px;
     height: 36px;
+    font-size: 16px;
 }
 
 .font-external {
     font-style: italic;
     color: white;
+}
+
+#valores {
+    width: 150px;
 }
