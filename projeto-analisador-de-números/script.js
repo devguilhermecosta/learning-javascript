@@ -58,11 +58,11 @@ function finalizar() {
         }
 
         var media = soma / tot
-        item.innerHTML = `<p>Você digitou um total de ${tot} números.</p>`
-        item.innerHTML += `<p>O menor número informado foi ${menor}.</p>`
-        item.innerHTML += `<p>O maior número informado foi ${maior}</p>`
-        item.innerHTML += `<p>A soma total entre os valores é de ${soma}</p>`
-        item.innerHTML += `<p>A média de valores é de ${media}</p>`
+        item.innerHTML = `<p>Você digitou um total de <strong>${tot}</strong> números.</p>`
+        item.innerHTML += `<p>O menor número informado foi <strong>${menor}</strong>.</p>`
+        item.innerHTML += `<p>O maior número informado foi <strong>${maior}</strong></p>`
+        item.innerHTML += `<p>A soma total entre os valores é de <strong>${soma}</strong></p>`
+        item.innerHTML += `<p>A média de valores é de <strong>${media}</strong></p>`
     } else {
         window.alert('Você não informou nenhum número.')
     }
