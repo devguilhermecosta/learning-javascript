@@ -1,6 +1,7 @@
 var numero = document.getElementById('iptnumero')
 var lista = document.getElementById('valores')
 var lista_numeros = []
+var display = document.getElementById('main')
 
 function isNumber(num) {
     if (Number(num) >= 1 && Number(num) <= 100) {
@@ -29,5 +30,14 @@ function adicionar() {
         var item = document.createElement('option')
         item.text = `Valor ${numero.value} adicionado`
         lista.appendChild(item)
+        numero.value = ''
+    }
+}
+
+function finalizar() {
+    var resultado = document.createElement('p')
+    if (lista_numeros.length != 0) {
+    resultado.innerHTML = `${lista_numeros}`
+    display.appendChild(resultado)
     }
 }
